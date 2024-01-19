@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우당탕탕 내성 꼬맹이</title>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    function Content(){
+      return (
+        <div>
+          <h1>시끄러운 내성 꼬맹이들</h1>
+          <hr />
+          <video controls width="700px" height="500px">
+            <source src="video/내성의사놀이.mp4"></source>
+          </video>
+          <h2>수술놀이</h2>
+          <h4>출연진: 정태린, 노윤, 홍서현</h4>
+          <h4>복수녀: 홍서현</h4>
+          <h4>물고기: 정태린</h4>
+          <h4>복수남: 노윤</h4>
+        </div>
+      );
+    };
+    function AllContent() {
+      return (
+        <Content />
+      )
+    }
+
+    const container = document.getElementById("container");
+    ReactDOM.render(<AllContent />, container);
+  </script>
+</html>
